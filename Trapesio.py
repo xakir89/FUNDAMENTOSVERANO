@@ -5,7 +5,6 @@ def ingrese(v):
         x = int(input(f"ingrese Valor para {v}"))
     return x
 def trapesio():
-
     bma = ingrese(f"""
 
                 **********
@@ -24,10 +23,12 @@ Base Mayor: """)
               *            *         
              *              *
             ******************
+                  
 Base Menor: """)
-    while bme > bma:
-        print("base menor no puede ser mas grande que la base mayor")
-        bme = ingrese(f"""
+    while True:
+        if bma <= bme:
+            print("base menor no puede ser igual o mas grande que la base mayor")
+            bme = ingrese(f"""
                           
                |-Ba Menor-|          
                 **********
@@ -35,7 +36,9 @@ Base Menor: """)
               *            *         
              *              *
             ******************
-Base Menor: """)
+Base Menor: """) 
+        else:
+            break
 
     a = ingrese(f"""
                       
