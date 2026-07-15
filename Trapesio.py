@@ -25,10 +25,9 @@ Base Mayor: """)
             ******************
                   
 Base Menor: """)
-    while True:
-        if bma <= bme:
-            print("base menor no puede ser igual o mas grande que la base mayor")
-            bme = ingrese(f"""
+    while bma <= bme:
+        print("base menor no puede ser igual o mas grande que la base mayor")
+        bme = ingrese(f"""
                           
                |-Ba Menor-|          
                 **********
@@ -37,8 +36,7 @@ Base Menor: """)
              *              *
             ******************
 Base Menor: """) 
-        else:
-            break
+
 
     a = ingrese(f"""
                       
@@ -83,7 +81,7 @@ def main():
 *   ------------------------       = {area:.2f}              *
 *               2                                        *
 *                                                        *
-**********************************************************)
+**********************************************************
 """)
         elif opc == 2:
             print("gracias por sus contar con nuestros servicios.")
