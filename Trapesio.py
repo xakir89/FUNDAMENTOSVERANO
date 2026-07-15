@@ -1,5 +1,8 @@
 def ingrese(v):
     x = int(input(f"ingrese Valor para {v}"))
+    while x <  0:
+        print("los lados del figura deben ser positivos: ")
+        x = int(input(f"ingrese Valor para {v}"))
     return x
 def trapesio():
 
