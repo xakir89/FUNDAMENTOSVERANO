@@ -11,6 +11,7 @@ def esprimo():
             return False
     print("Primo")
     return True
+
 def main():
     while True:
         print("*"*49)
@@ -19,7 +20,7 @@ def main():
         print(f"|{"1. REVISAR NUMEROS PRIMOS":^47}|")
         print(f"|{"2. SALIR":^47}|")
         print("*"*49)
-        opc = int(input("Ingrese una opcion"))
+        opc = int(input("Ingrese una opcion: "))
         if opc == 1:
             esprimo()
         elif opc == 2:

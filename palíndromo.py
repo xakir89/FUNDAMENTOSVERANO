@@ -15,10 +15,10 @@ def reconocer(palabra):
         fin -= 1
     return True
 def reconocerr(palabra):
-    fin = longitud(palabra)
-    for inicio in range(fin//2):
-        print(inicio, palabra[inicio], palabra[fin - 1 - inicio], fin -1 - inicio)
-        if palabra[inicio] != palabra[fin - 1 - inicio]:
+    fin = longitud(palabra)-1
+    for inicio in range(0,fin//2):
+        print(inicio, palabra[inicio], palabra[fin - inicio ], fin - inicio )
+        if palabra[inicio] != palabra[fin - inicio]:
             return False
     return True
 
