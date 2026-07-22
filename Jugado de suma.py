@@ -99,7 +99,9 @@ def main():
         print()
         print(f"{'1. Iniciar':^50}")
         print(f"{'2. Salir  ':^50}")
+        print()
         print("="*50)
+        print()
            
         try:
             opc = int(input("ingrese Opcion 1 o 2: ")) 
