@@ -33,12 +33,12 @@ def animacionImpar():
     #doble barra \ para que Python imprima una sola \
     
     frames = [
-        f"{'🤜🏻          🏈🦵🏻':>62}",
-        f"{'🤜🏻        🏈  🦵🏻':>62}",
-        f"{'🤜🏻      🏈    🦵🏻':>62}",
-        f"{'🤜🏻    🏈      🦵🏻':>62}",
-        f"{'🤜🏻  🏈        🦵🏻':>62}",
-        f"{'🤜🏻🏈          🦵🏻':>62}",
+        f"{'🤜🏻          🏈🦵🏻':^62}",
+        f"{'🤜🏻        🏈  🦵🏻':^62}",
+        f"{'🤜🏻      🏈    🦵🏻':^62}",
+        f"{'🤜🏻    🏈      🦵🏻':^62}",
+        f"{'🤜🏻  🏈        🦵🏻':^62}",
+        f"{'🤜🏻🏈          🦵🏻':^62}",
     ]
     for frame in frames:
         # \r sobrescribe la línea actual en la consola
